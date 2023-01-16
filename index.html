@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>자기 소개</title>
+        <!--외부 스타일 적용-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+             table {
+            width: 70%;
+            border: solid 1px black;
+
+        }
+        td, th {
+            border: solid 1px rgb(32, 32, 32);
+            padding: 10px;
+            font-size: 0.8em;
+            text-align: center;
+            
+        }
+        thead {
+            background-color: azure;
+        }
+        #school {
+            height: auto;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <!-- 시멘틱 태그 작성-->
+        <!--제목 영역--> 
+        <header id="d1">
+            
+            <!--사진 영역-->
+            <div>
+                <img src="img/me.PNG" width="150" height="150" rad>
+            </div>
+            <div>
+                <h1>PARK JUNYEONG</h1>
+                <p>박준영</p>
+            </div>
+            
+        </header>
+        
+        <!-- 메뉴 영역 - 네비게이션 영역-->
+        <nav>
+            <a href="#s1">[개인정보]</a>&nbsp;&nbsp;&nbsp;
+            <a href="#s2">[학력사항]</a>&nbsp;&nbsp;&nbsp;
+            <a href="#s3">[자격사항]</a>&nbsp;&nbsp;&nbsp;
+            <a href="#s4">[자기소개]</a>&nbsp;&nbsp;&nbsp;
+            <a href="servey.HTML"> [설문조사] </a>
+        </nav>
+
+        <!-- 개인정보 내용 영역-->
+        <section id="s1">
+            
+            
+            <div>
+                
+                <!-- 세부 내용 영역-->
+                <h2 class="c1" >개인정보</h2>
+                
+                <ol>
+                    <li><span class="material-icons">face</span>이름 : 박준영</li>
+                    <li><span class="material-icons">android</span>연락처 : 01026539951</li>
+                    <li><span class="material-icons">mark_as_unread</span>이메일 : amfydrkfl2@gmail.com</li>
+                    <li><span class="material-icons">home</span>주소 : 부산시 동래구</li>
+                </ol>
+            </div>
+
+            
+         
+
+        </section>
+
+        <!-- 학력사항 내용 영역-->
+        <section id="s2">
+            
+            <div id="school">
+                <h2 class="c2">학력사항</h2>
+                <!-- <ul>
+                    <li>부산가톨릭대학교 컴퓨터공학과 졸업</li>
+                    <li>김해고등학교 졸업</li>
+                    <li>대신중학교 졸업</li>
+                    <li>괴정초등학교 졸업</li>
+                </ul> -->
+                <table>
+                    <caption>학력사항</caption>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>부산가톨릭대학교</td>
+                            <td>컴퓨터공학과</td>
+                            <td>2015~2022</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>김해고등학교</td>
+                            <td rowspan="3"></td>
+                            <td>2012~2015</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>대신중학교</td>
+                            <td></td>
+                            <td>2009~2012</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>괴정초등학교</td>
+                            <td></td>
+                            <td>2003~2009</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+
+
+
+            </div>
+
+        </section>
+
+        <!-- 자격사항 내용 영역-->
+        <section id="s3">
+            
+            <div>
+                <h2 class="c3">자격사항</h2>
+                <ul>
+                    <li>정보처리기사 (취득예정)</li>
+                    <li>1종 보통 운전면허</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- 자기소개 내용 영역-->
+        <section id="s4">
+            
+            <div>
+                <h2 class="c4">자기소개</h2>
+                <p>
+                    <blockquote>
+                    안녕하세요. 저는 박준영입니다. 
+                    컴퓨터공학과를 졸업하긴 했지만<br>
+                    html은 1학년때 배워 잘 기억이 나지 않습니다. 열심히 배우겠습니다.
+                    </blockquote>
+                </p>
+            </div>
+
+        </section>
+
+        <!-- 꼬리말 영역-->
+        <footer>
+            <p>&copy;PJY <br> AI활용 빅데이터분석 풀스텍 서비스 SW개발자 양성과정</p>
+        </footer>
+
+        
+    </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 신청 자료</title>
+<style>
+    *{
+        box-sizing: border-box;
+        
+    }
+    form{
+        width: 70%;
+        background-color: blanchedalmond;
+        border: solid 1px;
+        padding: 10px;
+    }
+    label[for] {
+        display: inline-block;
+        height: 30px;
+    }
+
+    input[type=text], input[type=email] {
+        width: 100%;
+        height: 40px;
+        border:solid 1px rgb(0, 0, 0);
+        padding: 5px;
+    }
+
+    input[type=submit], input[type=reset] {
+        background-color: rgb(9, 51, 35);
+        color: white;
+        width: 45%;
+        padding: 10px;
+        border-radius: 10px;
+        border:0px;
+    }
+    
+    #user_birth, #user_month,#user_day {
+        width: 30%;
+        height: 30px;
+    }
+
+    .box4 {
+        border : solid 1px gray;
+       
+        padding-top: 10px;
+        width: 100%;
+        
+        
+    }
+    textarea {
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+    }
+    .box1 {
+        background-color: rgb(1, 48, 5);
+        color : rgb(0, 0, 0);
+        border-radius: 30px;
+        padding: 5px;
+        box-shadow: 3px 3px 3px;
+    }
+    .box1 h1 {
+        text-align: center;
+        font-size: 1.8em;
+        color : white;
+    }
+</style>
+
+</head>
+<body>
+    <form name="myForm" method="post" action="result.html">
+        <!--제목 영역-->
+        <div class="box1">
+            <h1>개인 신정 자료</h1>
+        </div>
+        <br>
+        <!--신청 영역-->
+        <div class="box2">
+            <div>  <!-- 이름-->
+               
+                <label for="user_name">성명</label><br> 
+                <input type="text" name="user_name" id="user_name" placeholder="성명 입력">
+            </div>
+
+            <div>  <!--메일-->
+                <label for="user_mail">E-mail</label><br> 
+                <input type="email" name="user_mail" id="user_mail" placeholder="Email 입력">
+            </div>
+            
+            <div> <!-- 생년 월일 -->
+                <label for="user_birth">생년월일</label><br>
+                <input type="unmber" name="user_birth" id="user_birth" placeholder="년도">
+                <select name="user_month" id="user_month">
+                    <option value="">월</option>
+                    <option value="1">1월</option>
+                    <option value="2">2월</option>
+                    <option value="3">3월</option>
+                    <option value="4">4월</option>
+                    <option value="5" selected>5월</option>
+                    <option value="6">6월</option>
+                    <option value="7">7월</option>
+                    <option value="8">8월</option>
+                    <option value="9">9월</option>
+                    <option value="10">10월</option>
+                    <option value="11">11월</option>
+                    <option value="12">12월</option>
+                </select>
+                <input type="unmber" name="user_day" id="user_day" placeholder="일">
+            </div>
+
+            <div class="box3"> <!--성별-->
+                <label>성별</label>
+                <div class="box4">
+                    <input type="radio" name="gender" id="gender_man" value="남자" checked >
+                    <label for="gender_man">남&nbsp;&nbsp;&nbsp;</label>
+                    <input type="radio" name="gender" id="gender_woman" value="여자">
+                    <label for="gender_woman">여</label>
+                </div>
+                <div class="box3"> <!-- 관심분야선택-->
+                <label>관심분야</label>
+                        <div class="box4">
+                        <input type="checkbox" name="ck_java" id="ck_java" value="자바">
+                        <label for="ck_java"> JAVA&nbsp;&nbsp;</label>
+                        <input type="checkbox" name="ck_html" id="ck_html" value="웹제작">
+                        <label for="ck_java"> HTML&nbsp;&nbsp;</label>
+                        <input type="checkbox" name="ck_python" id="ck_python" value="파이썬">
+                        <label for="ck_java"> Python&nbsp;&nbsp;</label>
+                        <input type="checkbox" name="ck_uiux" id="ck_uiux" value="UIUX">
+                        <label for="ck_java"> UI/UX</label>
+                        </div>
+                </div>
+            </div>
+          
+        
+
+            <div> <!--기타-->
+                <div class="box3">
+                <label for = "user_content">기타</label>
+                <textarea name="user_content" id="user_content"></textarea>
+                </div>
+
+            </div> <!--박스2 종료-->
+        </div>
+
+        
+
+        
+
+        <!--전송 버튼 영역-->
+        <div>
+            <input type="submit" value="확인">
+            <input type="reset" value="취소">
+
+        </div>
+    </form>
+    
+</body>
+</html>
